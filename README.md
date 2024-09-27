@@ -49,7 +49,7 @@ python app.py
 
 ## 스크린샷
 
-![스크린샷](screenshot.png)
+![스크린샷](/static/images/main.jpeg)
 
 ## 라이선스
 
