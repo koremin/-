@@ -1,0 +1,143 @@
+/* 중앙정렬된 세련된 UI 스타일 */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    /* 스크롤 제거 */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    /* Flexbox 적용 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    /* 내용이 넘칠 경우를 대비한 처리 */
+}
+
+h1 {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+button {
+    background-color: #3CB371;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3bcd7d;
+}
+
+.github-icon {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.github-icon a img {
+    width: 32px;
+    height: 32px;
+}
+
+#loading {
+    display: none;
+}
+
+.section {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #6c757d;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.custom-file-upload:hover {
+    background-color: #5a6268;
+}
+
+#file-name {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+@media screen and (max-height: 700px) {
+    .container {
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .custom-file-upload {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0px;
+    }
+}
